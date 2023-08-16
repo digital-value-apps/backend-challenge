@@ -1,10 +1,10 @@
 # Intro
 
-Now we have exposed the tree structure, we want to expose the historical search volume of any categories. Remember, the metric is only associated to the leaf categories. For the non-leaf categories, the metric corresponds to the sum of the metrics of its descendants.
+Now that we've exposed the tree, we want to expose the historical search volume of any category. Remember that the metric is only associated with leaf categories. For non-leaf categories, the metric is the aggregation of the metrics of its descendants.
 
 # Level 4 - Expose the historical search volume
 
-Implement a new endpoint that expose the average monthly volumes in the last 24 months of a category at any level of the tree that satisfies the following schema:
+Implement a new endpoint that displays the average monthly search volume over the last 24 months of a single category, at any level of the tree, that satisfies the following schema:
 
 ```json
 {
